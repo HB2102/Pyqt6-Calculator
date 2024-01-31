@@ -110,15 +110,6 @@ class Ui_Form(object):
                                             QtWidgets.QSizePolicy.Policy.Expanding)
         self.verticalLayout.addItem(spacerItem1)
 
-        self.add.clicked.connect(self.add_function)
-        self.sub.clicked.connect(self.sub_function)
-        self.mul.clicked.connect(self.mul_function)
-        self.dev.clicked.connect(self.dev_function)
-        self.mod.clicked.connect(self.mod_function)
-        self.min.clicked.connect(self.min_function)
-        self.max.clicked.connect(self.max_function)
-        self.ave.clicked.connect(self.ave_function)
-
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
@@ -139,52 +130,7 @@ class Ui_Form(object):
 
 
 
-    def add_function(self):
-        data1 = int(self.input1.text())
-        data2 = int(self.input2.text())
-        self.output.setText(f'{data1 + data2}')
 
-
-    def sub_function(self):
-        data1 = int(self.input1.text())
-        data2 = int(self.input2.text())
-        self.output.setText(f'{data1 - data2}')
-
-
-    def mul_function(self):
-        data1 = int(self.input1.text())
-        data2 = int(self.input2.text())
-        self.output.setText(f'{data1 * data2}')
-
-
-    def dev_function(self):
-        data1 = int(self.input1.text())
-        data2 = int(self.input2.text())
-        self.output.setText(f'{data1 / data2}')
-
-
-    def mod_function(self):
-        data1 = int(self.input1.text())
-        data2 = int(self.input2.text())
-        self.output.setText(f'{data1 % data2}')
-
-
-    def min_function(self):
-        data1 = int(self.input1.text())
-        data2 = int(self.input2.text())
-        self.output.setText(f'{min(data2,data1)}')
-
-
-    def max_function(self):
-        data1 = int(self.input1.text())
-        data2 = int(self.input2.text())
-        self.output.setText(f'{max(data2,data1)}')
-
-
-    def ave_function(self):
-        data1 = int(self.input1.text())
-        data2 = int(self.input2.text())
-        self.output.setText(f'{(data1 + data2) / 2}')
 
 
 
